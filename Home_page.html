@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="HP_styles.css">
+    <style>
+        /* Background rectangles */
+        .rectangle_small {
+            width: 100vw;
+            height: 100px;
+            background-color: rgb(179, 29, 29);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .rectangle_big {
+            width: 100vw;
+            height: 600px;
+            background-color: rgb(179, 29, 29);
+            position: absolute;
+            top: 300px;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* Logo and header elements */
+        .Logo {
+            width: 210px;
+            height: 210px;
+            position: absolute;
+            top: 93px;
+            left: 580px;
+            z-index: 2;
+        }
+
+        .Title_Text {
+            position: fixed;
+            top: 150px;
+            left: 250px;
+            font-size: 50px;
+            color: rgb(119, 0, 0);
+            font-family: Arial, sans-serif;
+            z-index: 2;
+        }
+
+        /* Navigation Buttons */
+        .Buttons_HOME, .Buttons_DONATE, .Buttons_EVENTS, .Buttons_JOIN, .Buttons_CONTACT {
+            position: absolute;
+            top: 25px;
+            width: 100px;
+            height: 50px;
+            z-index: 2;
+        }
+        
+        .Buttons_HOME { left: 125px; }
+        .Buttons_JOIN { left: 375px; }
+        .Buttons_EVENTS { left: 625px; }
+        .Buttons_DONATE { left: 875px; }
+        .Buttons_CONTACT { left: 1125px; }
+
+        /* Text headers */
+        .LINN_Text {
+            position: absolute;
+            top: 75px;
+            left: 30px;
+            font-size: 100px;
+            color: rgb(119, 0, 0);
+            font-family: sans-serif;
+            z-index: 2;
+        }
+
+        .MAR_Text {
+            position: absolute;
+            top: 75px;
+            left: 285px;
+            font-size: 100px;
+            color: rgb(0, 0, 0);
+            font-family: sans-serif;
+            z-index: 2;
+        }
+
+        .Young_Am_Text {
+            position: absolute;
+            top: 60px;
+            left: 800px;
+            font-size: 60px;
+            color: rgb(0, 0, 0);
+            font-family: sans-serif;
+            z-index: 2;
+        }
+
+        .For_Text {
+            position: absolute;
+            top: 145px;
+            left: 1025px;
+            font-size: 45px;
+            color: rgb(119, 0, 0);
+            font-family: Arial, sans-serif;
+            z-index: 2;
+        }
+
+        .Freedom_text {
+            position: absolute;
+            top: 175px;
+            left: 930px;
+            font-size: 65px;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            z-index: 2;
+        }
+
+        /* Page content to allow scrolling */
+        .scrollable-content {
+            margin-top: 600px; /* Give some space for the fixed elements */
+            padding: 20px;
+            height: 2000px; /* Example height for scrollable content */
+        }
+        .Meeting_Rect {
+            width: 800px;
+            height: 400px;
+            background-color: rgb(179, 29, 29);
+            position: absolute;
+            top: 1050px;
+            left: 275px;
+            z-index: 1;
+        }
+        .YAF_Rect {
+            width: 800px;
+            height: 400px;
+            background-color: rgb(86, 94, 93);
+            position: absolute;
+            top: 1650px;
+            left: 275px;
+            z-index: 1;
+        }
+        .Foundation_Logo {
+            width: 180px;
+            height: 125px;
+            position: absolute;
+            top: -160px;
+            left: 320px;
+            z-index: 2;
+        }
+        .Exe_Rect {
+            width: 100vw;
+            height: 500px;
+            background-color: rgb(179, 29, 29);
+            position: absolute;
+            top: 2200px;
+            left: 1px;
+            z-index: 1;
+        }
+        .Social_Media_Rect {
+            width: 100vw;
+            height: 200px;
+            background-color: rgb(86, 94, 93);
+            position: absolute;
+            top: 2800px;
+            left: 1px;
+            z-index: 1;
+        }
+        
+    </style>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="rectangle_small"></div>
+    <div class="rectangle_big"></div>
+
+    <!-- Logo -->
+    <img src="LM_YAF_LOGO.png" alt="Logo" class="Logo">
+    
+    <!-- Navigation buttons -->
+    <img src="HOME.png" alt="HOME BUTTON" class="Buttons_HOME">
+    <img src="CONTACT.png" alt="CONTACT BUTTON" class="Buttons_CONTACT">
+    <img src="EVENTS.png" alt="EVENTS BUTTON" class="Buttons_EVENTS">
+    <img src="JOIN.png" alt="JOIN BUTTON" class="Buttons_JOIN">
+    <img src="DONATE.png" alt="DONATE BUTTON" class="Buttons_DONATE">
+    
+    <!-- Fixed text -->
+    <h1 class="LINN_Text">LINN</h1>
+    <h1 class="MAR_Text">- MAR</h1>
+    <h1 class="Young_Am_Text">Young Americans</h1>
+    <h1 class="For_Text">For</h1>
+    <h1 class="Freedom_text">Freedom</h1>
+
+    <!--Info Boxes-->
+
+    <div class="Info_Rects">
+        <h2 style="text-align: center;">WHO are we?</h2>
+        <p>We are a Linn-Mar club affiliated with the Young America's Foundation (YAF).
+        Our goal is to lift up conservative values and voices by promoting student
+        action and engagement in our high school. We believe in traditional
+        American values and free speech, both of which we aim to protect and preserve.</p>
+    </div>
+
+    <div class="Info_Rects">
+        <h2 style="text-align: center;">WHAT do we do?</h2>
+        <p>We host events, discussions, and activities that encourage students to explore
+        conservative principles and engage in meaningful conversations about freedom,
+        traditional values, and individual rights.</p>
+    </div>
+
+    <div class="Info_Rects">
+        <h2 style="text-align: center;">WHY join us?</h2>
+        <p>Joining us means becoming part of a community that values free speech and
+        conservative principles. You will have the opportunity to participate in events,
+        meet like-minded individuals, and make your voice heard.</p>
+    </div>
+
+    <div class="Meeting_Rect">
+        <h1 style="text-align: center;">MEETING TIMES</h1>
+        <p style="text-align: center;">ADD MEETING TIMES.</p>
+    </div>
+
+    <div class="YAF_Rect">
+        <h1 style="text-align: center; margin-top: 70px;">Young America's Foundation</h1>
+        <p style="text-align: center; font-family: Arial; font-size: 20px; transform: scaleX(0.7); margin-top: 50px; line-height: 1.5;">
+            Young America's Foundation is an organization
+            dedicated to promoting conservatism on campuses accross the country since 1960.
+            They provide resources, support, and opportunities for students to engage
+            in conservative activism and preserve free speech in places where 
+            that right may be threatened. The Linn-Mar Young American's For Freedom club
+            is part of this larger movement, working to bring these values to our school 
+            community. You can click on their logo to visit the Young America's Foundation
+            website and learn more about their mission.
+        </p>
+        <a href="https://www.yaf.org/">
+            <img src="YAFoundation_LOGO.png" alt="YAF Logo" class="Foundation_Logo">
+        </a>
+    </div>
+
+    <div class="Exe_Rect">
+        <h1 style="text-align: center;">EXECUTIVE BOARD</h1>
+        <p style="text-align: center;">ADD EXECUTIVE BOARD MEMBERS.</p>
+    </div>
+
+    <div class="Social_Media_Rect">
+        <h1 style="text-align: center; margin-top: 50px;">Follow us on Social Media</h1>
+        <p style="text-align: center; font-family: Arial; font-size: 20px; transform: scaleX(0.7); margin-top: 20px;">
+            Stay updated with our latest events and activities by following us on social media.
+            Click the links below to connect with us!
+        </p>
+        <p style="text-align: center;">
+            <a href="https://www.facebook.com/LinnMarYAF">Facebook</a> |
+            <a href="https://www.twitter.com/LinnMarYAF">Twitter</a> |
+            <a href="https://www.instagram.com/LinnMarYAF">Instagram</a>
+        </p>
+    <!--Scrollable content-->
+    <div class="scrollable-content">   
+    </div>
+</body>
+</html>

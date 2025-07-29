@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.YAF_img {
+    margin-top: -250px; /*img moves up 100px*/
+    margin-left: 40px; /*img moves right 25px*/
+    height: 140px;
+    width: 140px;
+}
+.LM_img {
+    margin-top: -200px; /*img moves up 100px*/
+    margin-left: 1075px; /*img moves right 25px*/
+    height: 250px;
+    width: 250px;
+}
+.Info_Rects {
+    position: relative;
+    background-color: rgb(86, 94, 93);
+    font-family: Arial, sans-serif;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    top: 310px;
+    left: -1.5px; 
+    z-index: 3; 
+    width: 1250px;
+    height: 100px;
+}
