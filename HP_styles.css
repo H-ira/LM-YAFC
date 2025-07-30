@@ -1,112 +1,29 @@
 body {
-    margin: 0;
-    padding: 0;
     background-color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
 }
 
-/* Make all images responsive */
-img {
-    max-width: 100%;
-    height: auto;
+.YAF_img {
+    margin-top: -250px; /*img moves up 100px*/
+    margin-left: 40px; /*img moves right 25px*/
+    height: 140px;
+    width: 140px;
 }
-
-/* Info Rectangles */
+.LM_img {
+    margin-top: -200px; /*img moves up 100px*/
+    margin-left: 1075px; /*img moves right 25px*/
+    height: 250px;
+    width: 250px;
+}
 .Info_Rects {
+    position: relative;
     background-color: rgb(86, 94, 93);
+    font-family: Arial, sans-serif;
     border: 2px solid black;
     padding: 20px;
-    margin: 40px auto;
-    width: 90%;
-    max-width: 1200px;
-    color: white;
-    z-index: 3;
-}
-
-/* Meeting / YAF / Exec / Social Sections */
-.Meeting_Rect, .YAF_Rect, .Exe_Rect, .Social_Media_Rect {
-    margin: 40px auto;
-    padding: 40px 20px;
-    width: 90%;
-    max-width: 1200px;
-    color: white;
-}
-
-.Meeting_Rect {
-    background-color: rgb(179, 29, 29);
-}
-
-.YAF_Rect {
-    background-color: rgb(86, 94, 93);
-}
-
-.Exe_Rect {
-    background-color: rgb(179, 29, 29);
-}
-
-.Social_Media_Rect {
-    background-color: rgb(86, 94, 93);
-    text-align: center;
-}
-
-.Foundation_Logo {
-    display: block;
-    margin: 40px auto 0 auto;
-    width: 150px;
-    height: auto;
-}
-
-/* Navigation Buttons */
-[class^="Buttons_"] {
-    width: 60px;
-    height: auto;
-    margin: 10px;
-}
-
-/* Responsive Text Sections */
-.LINN_Text, .MAR_Text, .Young_Am_Text, .For_Text, .Freedom_text {
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* Responsive Header */
-.Logo {
-    display: block;
-    margin: 20px auto;
-    width: 150px;
-    height: auto;
-}
-
-/* Media Queries for Mobile Layout Adjustments */
-@media (max-width: 768px) {
-    .Title_Text {
-        font-size: 28px;
-        position: static;
-        text-align: center;
-    }
-
-    .LINN_Text, .MAR_Text {
-        font-size: 60px;
-    }
-
-    .Young_Am_Text {
-        font-size: 36px;
-    }
-
-    .For_Text {
-        font-size: 24px;
-    }
-
-    .Freedom_text {
-        font-size: 40px;
-    }
-
-    .rectangle_small, .rectangle_big {
-        height: 80px;
-    }
-
-    .Foundation_Logo {
-        width: 100px;
-    }
+    margin: 20px;
+    top: 310px;
+    left: -1.5px; 
+    z-index: 3; 
+    width: 1250px;
+    height: 100px;
 }
