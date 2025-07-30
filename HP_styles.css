@@ -3,17 +3,19 @@ body {
 }
 
 .YAF_img {
-    margin-top: -250px; /*img moves up 100px*/
-    margin-left: 40px; /*img moves right 25px*/
+    margin-top: -250px;
+    margin-left: 40px;
     height: 140px;
     width: 140px;
 }
+
 .LM_img {
-    margin-top: -200px; /*img moves up 100px*/
-    margin-left: 1075px; /*img moves right 25px*/
+    margin-top: -200px;
+    margin-left: 1075px;
     height: 250px;
     width: 250px;
 }
+
 .Info_Rects {
     position: relative;
     background-color: rgb(86, 94, 93);
@@ -22,8 +24,243 @@ body {
     padding: 20px;
     margin: 20px;
     top: 310px;
-    left: -1.5px; 
-    z-index: 3; 
+    left: -1.5px;
+    z-index: 3;
     width: 1250px;
     height: 100px;
 }
+
+/* Background rectangles */
+.rectangle_small {
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(179, 29, 29);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.rectangle_big {
+    width: 100vw;
+    height: 600px;
+    background-color: rgb(179, 29, 29);
+    position: absolute;
+    top: 300px;
+    left: 0;
+    z-index: 1;
+}
+
+/* Logo and header elements */
+.Logo {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: 93px;
+    left: 580px;
+    z-index: 2;
+}
+
+.Title_Text {
+    position: fixed;
+    top: 150px;
+    left: 250px;
+    font-size: 50px;
+    color: rgb(119, 0, 0);
+    font-family: Arial, sans-serif;
+    z-index: 2;
+}
+
+/* Navigation Buttons */
+.Buttons_HOME, .Buttons_DONATE, .Buttons_EVENTS, .Buttons_JOIN, .Buttons_CONTACT {
+    position: absolute;
+    top: 25px;
+    width: 100px;
+    height: 50px;
+    z-index: 2;
+}
+
+.Buttons_HOME { left: 125px; }
+.Buttons_JOIN { left: 375px; }
+.Buttons_EVENTS { left: 625px; }
+.Buttons_DONATE { left: 875px; }
+.Buttons_CONTACT { left: 1125px; }
+
+/* Text headers */
+.LINN_Text {
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    font-size: 100px;
+    color: rgb(119, 0, 0);
+    font-family: sans-serif;
+    z-index: 2;
+}
+
+.MAR_Text {
+    position: absolute;
+    top: 75px;
+    left: 285px;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    z-index: 2;
+}
+
+.Young_Am_Text {
+    position: absolute;
+    top: 60px;
+    left: 800px;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    z-index: 2;
+}
+
+.For_Text {
+    position: absolute;
+    top: 145px;
+    left: 1025px;
+    font-size: 45px;
+    color: rgb(119, 0, 0);
+    font-family: Arial, sans-serif;
+    z-index: 2;
+}
+
+.Freedom_text {
+    position: absolute;
+    top: 175px;
+    left: 930px;
+    font-size: 65px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    z-index: 2;
+}
+
+/* Page content */
+.scrollable-content {
+    margin-top: 600px;
+    padding: 20px;
+    height: 2000px;
+}
+
+.Meeting_Rect {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(179, 29, 29);
+    position: absolute;
+    top: 1050px;
+    left: 275px;
+    z-index: 1;
+}
+
+.YAF_Rect {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(86, 94, 93);
+    position: absolute;
+    top: 1650px;
+    left: 275px;
+    z-index: 1;
+}
+
+.Foundation_Logo {
+    width: 180px;
+    height: 125px;
+    position: absolute;
+    top: -160px;
+    left: 320px;
+    z-index: 2;
+}
+
+.Exe_Rect {
+    width: 100vw;
+    height: 700px;
+    background-color: rgb(179, 29, 29);
+    position: absolute;
+    top: 2200px;
+    left: 1px;
+    z-index: 1;
+}
+
+.Social_Media_Rect {
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(86, 94, 93);
+    position: absolute;
+    top: 3000px;
+    left: 1px;
+    z-index: 1;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .rectangle_small,
+    .rectangle_big,
+    .Exe_Rect,
+    .Social_Media_Rect {
+        width: 100vw;
+    }
+
+    .Logo {
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Title_Text,
+    .Young_Am_Text,
+    .For_Text,
+    .Freedom_text,
+    .LINN_Text,
+    .MAR_Text {
+        font-size: 6vw !important;
+        left: 10vw !important;
+    }
+
+    .Buttons_HOME,
+    .Buttons_JOIN,
+    .Buttons_EVENTS,
+    .Buttons_DONATE,
+    .Buttons_CONTACT {
+        width: 70px;
+        height: 35px;
+        top: 15px;
+    }
+
+    .Buttons_HOME { left: 5vw; }
+    .Buttons_JOIN { left: 25vw; }
+    .Buttons_EVENTS { left: 45vw; }
+    .Buttons_DONATE { left: 65vw; }
+    .Buttons_CONTACT { left: 85vw; }
+
+    .Info_Rects {
+        width: 90vw;
+        left: 5vw;
+        font-size: 4vw;
+    }
+
+    .Meeting_Rect,
+    .YAF_Rect {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .Foundation_Logo {
+        width: 120px;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .scrollable-content {
+        padding: 20px;
+        margin-top: 650px;
+    }
+
+    h1, h2, p {
+        font-size: 4vw;
+    }
+}
+

@@ -3,237 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="HP_styles.css">
-    <style>
-        /* Background rectangles */
-        .rectangle_small {
-            width: 100vw;
-            height: 100px;
-            background-color: rgb(179, 29, 29);
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-        
-        .rectangle_big {
-            width: 100vw;
-            height: 600px;
-            background-color: rgb(179, 29, 29);
-            position: absolute;
-            top: 300px;
-            left: 0;
-            z-index: 1;
-        }
-
-        /* Logo and header elements */
-        .Logo {
-            width: 210px;
-            height: 210px;
-            position: absolute;
-            top: 93px;
-            left: 580px;
-            z-index: 2;
-        }
-
-        .Title_Text {
-            position: fixed;
-            top: 150px;
-            left: 250px;
-            font-size: 50px;
-            color: rgb(119, 0, 0);
-            font-family: Arial, sans-serif;
-            z-index: 2;
-        }
-
-        /* Navigation Buttons */
-        .Buttons_HOME, .Buttons_DONATE, .Buttons_EVENTS, .Buttons_JOIN, .Buttons_CONTACT {
-            position: absolute;
-            top: 25px;
-            width: 100px;
-            height: 50px;
-            z-index: 2;
-        }
-        
-        .Buttons_HOME { left: 125px; }
-        .Buttons_JOIN { left: 375px; }
-        .Buttons_EVENTS { left: 625px; }
-        .Buttons_DONATE { left: 875px; }
-        .Buttons_CONTACT { left: 1125px; }
-
-        /* Text headers */
-        .LINN_Text {
-            position: absolute;
-            top: 75px;
-            left: 30px;
-            font-size: 100px;
-            color: rgb(119, 0, 0);
-            font-family: sans-serif;
-            z-index: 2;
-        }
-
-        .MAR_Text {
-            position: absolute;
-            top: 75px;
-            left: 285px;
-            font-size: 100px;
-            color: rgb(0, 0, 0);
-            font-family: sans-serif;
-            z-index: 2;
-        }
-
-        .Young_Am_Text {
-            position: absolute;
-            top: 60px;
-            left: 800px;
-            font-size: 60px;
-            color: rgb(0, 0, 0);
-            font-family: sans-serif;
-            z-index: 2;
-        }
-
-        .For_Text {
-            position: absolute;
-            top: 145px;
-            left: 1025px;
-            font-size: 45px;
-            color: rgb(119, 0, 0);
-            font-family: Arial, sans-serif;
-            z-index: 2;
-        }
-
-        .Freedom_text {
-            position: absolute;
-            top: 175px;
-            left: 930px;
-            font-size: 65px;
-            color: rgb(0, 0, 0);
-            font-family: Arial, sans-serif;
-            z-index: 2;
-        }
-
-        /* Page content to allow scrolling */
-        .scrollable-content {
-            margin-top: 600px; /* Give some space for the fixed elements */
-            padding: 20px;
-            height: 2000px; /* Example height for scrollable content */
-        }
-        .Meeting_Rect {
-            width: 800px;
-            height: 400px;
-            background-color: rgb(179, 29, 29);
-            position: absolute;
-            top: 1050px;
-            left: 275px;
-            z-index: 1;
-        }
-        .YAF_Rect {
-            width: 800px;
-            height: 400px;
-            background-color: rgb(86, 94, 93);
-            position: absolute;
-            top: 1650px;
-            left: 275px;
-            z-index: 1;
-        }
-        .Foundation_Logo {
-            width: 180px;
-            height: 125px;
-            position: absolute;
-            top: -160px;
-            left: 320px;
-            z-index: 2;
-        }
-        .Exe_Rect {
-            width: 100vw;
-            height: 700px;
-            background-color: rgb(179, 29, 29);
-            position: absolute;
-            top: 2200px;
-            left: 1px;
-            z-index: 1;
-        }
-        .Social_Media_Rect {
-            width: 100vw;
-            height: 400px;
-            background-color: rgb(86, 94, 93);
-            position: absolute;
-            top: 3000px;
-            left: 1px;
-            z-index: 1;
-        }
-@media (max-width: 768px) {
-    .rectangle_small,
-    .rectangle_big,
-    .Exe_Rect,
-    .Social_Media_Rect {
-        width: 100vw;
-    }
-
-    .Logo {
-        width: 150px;
-        height: 150px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .Title_Text,
-    .Young_Am_Text,
-    .For_Text,
-    .Freedom_text,
-    .LINN_Text,
-    .MAR_Text {
-        font-size: 6vw !important;
-        left: 10vw !important;
-    }
-
-    .Buttons_HOME,
-    .Buttons_JOIN,
-    .Buttons_EVENTS,
-    .Buttons_DONATE,
-    .Buttons_CONTACT {
-        width: 70px;
-        height: 35px;
-        top: 15px;
-    }
-
-    .Buttons_HOME { left: 5vw; }
-    .Buttons_JOIN { left: 25vw; }
-    .Buttons_EVENTS { left: 45vw; }
-    .Buttons_DONATE { left: 65vw; }
-    .Buttons_CONTACT { left: 85vw; }
-
-    .Info_Rects {
-        width: 90vw;
-        left: 5vw;
-        font-size: 4vw;
-    }
-
-    .Meeting_Rect,
-    .YAF_Rect {
-        width: 90vw;
-        left: 5vw;
-    }
-
-    .Foundation_Logo {
-        width: 120px;
-        height: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .scrollable-content {
-        padding: 20px;
-        margin-top: 650px;
-    }
-
-    h1, h2, p {
-        font-size: 4vw;
-    }
-}
-
-    </style>
     <title>Home Page</title>
 </head>
 <body>
@@ -242,14 +12,14 @@
 
     <!-- Logo -->
     <img src="images/logo.png" alt="Logo" class="Logo">
-    
+
     <!-- Navigation buttons -->
     <img src="images/HOME.png" alt="HOME BUTTON" class="Buttons_HOME">
     <img src="images/CONTACT.png" alt="CONTACT BUTTON" class="Buttons_CONTACT">
     <img src="images/EVENTS.png" alt="EVENTS BUTTON" class="Buttons_EVENTS">
     <img src="images/JOIN.png" alt="JOIN BUTTON" class="Buttons_JOIN">
     <img src="images/DONATE.png" alt="DONATE BUTTON" class="Buttons_DONATE">
-    
+
     <!-- Fixed text -->
     <h1 class="LINN_Text">LINN</h1>
     <h1 class="MAR_Text">- MAR</h1>
@@ -257,8 +27,7 @@
     <h1 class="For_Text">For</h1>
     <h1 class="Freedom_text">Freedom</h1>
 
-    <!--Info Boxes-->
-
+    <!-- Info Boxes -->
     <div class="Info_Rects">
         <h2 style="text-align: center;">WHO are we?</h2>
         <p>We are a Linn-Mar club affiliated with the Young America's Foundation (YAF).
@@ -315,10 +84,9 @@
             <a href="https://www.instagram.com/LinnMarYAF">Instagram</a>
         </p>
     </div>
-    <!--Scrollable content-->
-    <div class="scrollable-content">   
-    </div>
 
+    <!-- Scrollable content -->
+    <div class="scrollable-content"></div>
     <div style="height: 200px;"></div>
 </body>
 </html>
