@@ -238,7 +238,7 @@ body.fade-out {
         width: 80vw;
         height: 35vw;
         top: -5vw;
-        left: -4vw;
+        left: -3vw;
     }
 
     .Title_Text {
@@ -268,7 +268,7 @@ body.fade-out {
         height: 650px;
         left: 1vw;
         top: 250px;
-        width: 96vw;
+        width: 98vw;
     }
     .Meeting_Rect {
         width: 90vw;
@@ -310,7 +310,7 @@ body.fade-out {
         height: 80px;
         top: 0;
         left: 0;
-        width: 97vw;
+        width: 100vw;
     }
     .Buttons_CONTACT, .Buttons_DONATE, .Buttons_EVENTS, .Buttons_HOME, .Buttons_JOIN {
         top: 5px;
@@ -318,11 +318,12 @@ body.fade-out {
         height: 30px;
         margin: 15px;
     }
-    .Buttons_CONTACT { left: 5px; }
-    .Buttons_DONATE { left: 80px; }
+    .Buttons_HOME { left: 5px; }
+    .Buttons_JOIN { left: 80px; }
     .Buttons_EVENTS { left: 155px; }
-    .Buttons_HOME { left: 230px; }
-    .Buttons_JOIN { left: 305px; }
+    .Buttons_DONATE { left: 230px; }
+    .Buttons_CONTACT { left: 305px; }
+
 
     .Logo {
         width: 150px;
