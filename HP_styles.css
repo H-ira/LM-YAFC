@@ -24,7 +24,8 @@ body.fade-out {
 .Info_Rects {
     position: relative;
     background-color: rgb(86, 94, 93);
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
     border: 2px solid black;
     padding: 20px;
     margin: 20px;
